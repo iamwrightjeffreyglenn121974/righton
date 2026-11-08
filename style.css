@@ -1,0 +1,156 @@
+
+:root {
+    --background: #101820;
+    --surface: #192632;
+    --blue: #19A7E0;
+    --pink: #FF3D9A;
+    --white: #FFFFFF;
+    --muted: #AAB8C5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--background);
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    width: 100%;
+    padding: 24px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #293743;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    color: var(--blue);
+}
+
+.brand-name {
+    color: var(--muted);
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.welcome {
+    width: 100%;
+    max-width: 680px;
+    text-align: center;
+}
+
+.welcome h1 {
+    font-size: clamp(36px, 7vw, 54px);
+    margin-bottom: 18px;
+}
+
+.welcome > p {
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+#request-form {
+    background: var(--surface);
+    padding: 18px;
+    border: 1px solid #344554;
+    border-radius: 14px;
+    text-align: right;
+}
+
+#user-request {
+    width: 100%;
+    min-height: 150px;
+    padding: 16px;
+    resize: vertical;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--white);
+    font: inherit;
+    font-size: 16px;
+}
+
+#user-request::placeholder {
+    color: var(--muted);
+}
+
+#request-form button {
+    padding: 14px 26px;
+    border: none;
+    border-radius: 8px;
+    background: var(--blue);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#request-form button:hover {
+    background: #128BC0;
+}
+
+.tagline {
+    margin-top: 25px;
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.footer {
+    padding: 22px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    color: var(--muted);
+    font-size: 12px;
+    border-top: 1px solid #293743;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 27px;
+    }
+
+    .brand-name {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .main-content {
+        padding: 40px 18px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
