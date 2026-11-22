@@ -4,54 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RightOn - Your independent digital concierge.">
-    <title>RightOn | Your Digital Concierge</title>
+    <meta name="theme-color" content="#101510">
+    <title>RightOn | Your Personal Middleman</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
     <header class="header">
-        <div class="logo">RightOn<span>.</span></div>
-        <div class="brand-name">THE WRIGHT OF WAY</div>
+        <div class="logo">RIGHT<span>ON</span></div>
+        <button class="menu-button" id="menuButton">☰</button>
     </header>
 
-    <main class="main-content">
+    <main class="main-container">
 
-        <section class="welcome">
-            <h1>What do you need?</h1>
-
-            <p>
-                Tell RightOn what you're looking for.
-                We'll help you figure out the rest.
+        <section class="hero">
+            <p class="eyebrow">YOUR PERSONAL MIDDLEMAN</p>
+            <h1>Tell us what<br>you need.</h1>
+            <p class="hero-text">
+                We'll handle the research, comparisons and legwork.
+                You make the decision.
             </p>
-
-            <form id="request-form">
-
-                <textarea
-                    id="user-request"
-                    placeholder="Describe what you need..."
-                    required
-                ></textarea>
-
-                <button type="submit">Let's Go →</button>
-
-            </form>
-
-            <p class="tagline">
-                Simple to use. Sophisticated behind the scenes.
-            </p>
-
         </section>
+
+        <section class="request-section">
+            <label for="userRequest">WHAT CAN WE HELP YOU WITH?</label>
+
+            <textarea
+                id="userRequest"
+                placeholder="Describe what you're looking for. Be as specific or as simple as you like..."
+                rows="5"
+            ></textarea>
+
+            <button id="submitRequest" class="submit-button">
+                LET'S GET IT DONE →
+            </button>
+        </section>
+
+        <section class="examples">
+            <h2>WHAT CAN RIGHTON DO?</h2>
+
+            <div class="example-card">
+                <span>✈️</span>
+                <div>
+                    <h3>Plan a trip</h3>
+                    <p>Compare hotels, flights, transportation and activities.</p>
+                </div>
+            </div>
+
+            <div class="example-card">
+                <span>🏠</span>
+                <div>
+                    <h3>Find a product or service</h3>
+                    <p>Research options, compare prices and find the best fit.</p>
+                </div>
+            </div>
+
+            <div class="example-card">
+                <span>🔎</span>
+                <div>
+                    <h3>Research anything</h3>
+                    <p>Let us do the searching and organize the information.</p>
+                </div>
+            </div>
+
+            <div class="example-card">
+                <span>📋</span>
+                <div>
+                    <h3>Solve a problem</h3>
+                    <p>Turn complicated tasks into manageable steps.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="responseArea" class="response-area"></section>
 
     </main>
 
     <footer class="footer">
-        <p>RightOn © 2026</p>
-        <p>Powered by The Wright of Way</p>
+        <p>RIGHTON</p>
+        <p>Your request. Our legwork. Your decision.</p>
+        <p>© 2026 RightOn</p>
     </footer>
 
     <script src="app.js"></script>
-
 </body>
 </html>
